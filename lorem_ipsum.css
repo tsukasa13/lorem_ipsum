@@ -10,6 +10,31 @@
   background-color: #EC715F; /* 背景色red */
 }
 
+a {
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list > :first-child {
+  margin-right: auto;
+}
+
+.nav-list-item {
+  line-height: 10px;
+  display: inline-block;
+  margin: 30px;
+}
+
+.header-image {
+  height: 70px;
+}
+
 .main-visual {
   width: 100%; /* 横幅いっぱい */
   height: 650px; /* 高さ300px */
