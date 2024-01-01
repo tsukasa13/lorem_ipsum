@@ -12,7 +12,7 @@
 
 .main-visual {
   width: 100%; /* 横幅いっぱい */
-  height: 300px; /* 高さ300px */
+  height: 650px; /* 高さ300px */
   background-color: orange; /* 背景色orange */
 }
 
@@ -41,5 +41,12 @@
 .footer {
   width: 100%; /* 横幅いっぱい */
   height: 60px; /* 高さ120px */
+  text-align: center;
+  line-height: 60px;
   background-color: #EC715F; /* 背景色red */
+}
+
+.footer-text {
+  color: #FAFAFA;
+  font-size: 16px;
 }
