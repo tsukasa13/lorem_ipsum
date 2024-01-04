@@ -38,7 +38,24 @@ a {
 .main-visual {
   width: 100%; /* 横幅いっぱい */
   height: 650px; /* 高さ300px */
-  background-color: orange; /* 背景色orange */
+  background-image: url(img2/mv.png); /* 背景色orange */
+  background-size: cover;
+  background-position: center;
+}
+
+.main-visual-content {
+  text-align: center;
+  color: #FAFAFA;
+  padding-top: 200px;
+}
+
+.main-visual-name {
+  font-size: 64px;
+}
+
+.main-visual-text {
+  font-size: 20px;
+  padding-top: 10px;
 }
 
 .portfolio {
