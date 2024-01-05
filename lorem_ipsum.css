@@ -7,7 +7,12 @@
 .header {
   width: 100%; /* 横幅いっぱい */
   height: 70px; /* 高さ120px */
-  background-color: #EC715F; /* 背景色red */
+  background-color: #EC715F; /* 背景色 */
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
@@ -18,11 +23,6 @@ a {
 
 .nav-list {
   display: flex;
-  justify-content: flex-end;
-}
-
-.nav-list > :first-child {
-  margin-right: auto;
 }
 
 .nav-list-item {
