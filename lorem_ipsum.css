@@ -124,8 +124,46 @@ background-image: url(img2/talk.jpg);
 }
 
 .feature {
-  width: 100%;
-  height: 400px;
+  text-align: center;
+}
+
+.feature-name {
+  font-size: 32px;
+  color: #000000;
+  padding-top: 90px;
+}
+
+.feature-text {
+  font-size: 16px;
+  color: #000000;
+  margin: 30px;
+}
+
+.strength-box {
+  display: flex;
+  width: 980px;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+}
+
+.strength {
+  width: 320px;
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 60px;
+}
+
+.strength-name {
+  font-size: 20px;
+  color: #000000;
+  margin: 10px;
+}
+
+.strength-text {
+  font-size: 16px;
+  color: #000000;
 }
 
 .profile {
