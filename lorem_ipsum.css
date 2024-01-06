@@ -164,6 +164,7 @@ background-image: url(img2/talk.jpg);
 .strength-text {
   font-size: 16px;
   color: #000000;
+  text-align: left;
 }
 
 .profile {
