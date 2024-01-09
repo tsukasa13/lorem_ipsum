@@ -258,7 +258,14 @@ background-image: url(img2/talk.jpg);
 }
 
 .mail {
+  text-decoration: underline;
   margin-bottom: 20px;
+  color: #000000;
+}
+
+.tel {
+  text-decoration: underline;
+  color: #000000;
 }
 
 .contact-icon {
