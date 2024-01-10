@@ -2,6 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Lorem Ipsum</title>
     <script src="https://kit.fontawesome.com/c9084df719.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="lorem_ipsum.css" />
@@ -15,7 +16,11 @@
             <img class="header-image" src="img2/logo.png" alt="ロゴ">
           </a>
         </h1>
-        <nav>
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span><i class="fa-solid fa-bars"></i></span></label>
+        <nav class="nav_content">
           <ul class="nav-list">
             <li class="nav-list-item">
               <a href="lorem_ipsum.html">Portfolio</a>

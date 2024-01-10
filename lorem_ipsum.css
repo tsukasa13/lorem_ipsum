@@ -8,6 +8,7 @@
   width: 100%; /* 横幅いっぱい */
   height: 70px; /* 高さ120px */
   background-color: #EC715F; /* 背景色 */
+  position: relative;
 }
 
 .header-list {
@@ -288,4 +289,103 @@ background-image: url(img2/talk.jpg);
 .footer-text {
   color: #FAFAFA;
   font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .header-image {
+    display: block;
+  }
+
+  .drawer_hidden {
+    display: none;
+  }
+
+  .drawer_open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上にする */
+    cursor: pointer;
+  }
+
+  .drawer_open span,
+  .drawer_open span:before,
+  .drawer_open span:after {
+    display: block;
+    height: 40px;
+    width: 40px;
+    color: #FAFAFA;
+    font-size: 25px;
+    border: 1px solid #FAFAFA;
+    margin: auto 5px;
+    padding-left: 7px;
+    transition: 0.5s;
+    position: absolute;
+  }
+
+  /* アイコンがクリックされたら真ん中の線を透明にする */
+  #drawer_input:checked ~ .drawer_open span {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+  #drawer_input:checked ~ .drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  #drawer_input:checked ~ .drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* メニューのデザイン*/
+  .nav_content {
+    width: 50%;
+    height: 20%;
+    position: fixed;
+    top: 70px;
+    left: 100%; /* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: #fff;
+    transition: .5s;
+  }
+
+  /* メニュー黒ポチを消す */
+  .nav_list {
+    list-style: none;
+  }
+
+  /* アイコンがクリックされたらメニューを表示 */
+  #drawer_input:checked ~ .nav_content {
+    left: 400px;/* メニューを画面に入れる */
+  }
+}
+
+/* メディアクエリ: 769px以上の場合に適用（PC版） */
+@media screen and (min-width: 769px) {
+  .drawer_hidden {
+    display: none;
+  }
+
+  .drawer_open {
+    display: none; /* デスクトップ表示時は非表示 */
+    cursor: pointer;
+  }
+
+　.nav-list {
+    display: flex;
+  }
+
+  .nav-list-item {
+    margin: 30px;
+  }
 }
