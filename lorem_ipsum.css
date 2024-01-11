@@ -368,6 +368,19 @@ background-image: url(img2/talk.jpg);
   #drawer_input:checked ~ .nav_content {
     left: 400px;/* メニューを画面に入れる */
   }
+
+  .main-visual {
+    width: 100%;
+    background-image: url(img2/code.png); /* 背景色orange */
+  }
+
+  .main-visual-name {
+    font-size: 40px;
+  }
+
+  .main-visual-text {
+    font-size: 18px;
+  }
 }
 
 /* メディアクエリ: 769px以上の場合に適用（PC版） */
