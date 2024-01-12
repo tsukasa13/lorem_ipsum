@@ -381,6 +381,18 @@ background-image: url(img2/talk.jpg);
   .main-visual-text {
     font-size: 18px;
   }
+
+  .production-group {
+    width: 300px;
+  }
+
+  .production {
+    margin-right: 0px;
+  }
+
+  .sp-none {
+    display: none;
+  }
 }
 
 /* メディアクエリ: 769px以上の場合に適用（PC版） */
