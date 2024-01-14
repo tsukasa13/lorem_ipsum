@@ -425,6 +425,29 @@ background-image: url(img2/talk.jpg);
   .right-content {
     width: 100%;
   }
+
+  .group {
+    flex-flow: row wrap;
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-contact {
+    width: 100%;
+  }
+
+  .right-contact {
+    width: 100%;
+  }
+
+  .right-contact .fa {
+    font-size: 50px;
+    margin-right: 8px;
+  }
+
+  .contact-name {
+    margin-top: 20px;
+  }
 }
 
 /* メディアクエリ: 769px以上の場合に適用（PC版） */
