@@ -407,6 +407,24 @@ background-image: url(img2/talk.jpg);
   .strength:first-child {
     margin-top: 0;
   }
+
+  .profile-group {
+    flex-flow: row wrap;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .profile-group .left-content {
+    margin-bottom: 20px;
+  }
+
+  .left-content {
+    width: 100%;
+  }
+
+  .right-content {
+    width: 100%;
+  }
 }
 
 /* メディアクエリ: 769px以上の場合に適用（PC版） */
